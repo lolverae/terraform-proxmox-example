@@ -1,0 +1,5 @@
+proxmox_api_url = ""
+proxmox_api_token_id = ""
+proxmox_api_token_secret = ""
+ssh_key = ""
+proxmox_host = ""
