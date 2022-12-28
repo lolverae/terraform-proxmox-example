@@ -13,4 +13,17 @@ resource "proxmox_vm_qemu" "my_vm" {
     cpu = "host"
     memory = 2048
 
+    network {
+        model = "virtio"
+        bridge = "vmbr0"
+    }
+
+    os_type = "cloud-init"
+    nameserver = ""
+    cluster = ""
+    ipconfig0 = "ip=10.10.60.9${count.index + 1}/24,gw=10.10.60.1"
+    
+    sshkeys = <<EOF
+    var.ssh_key
+    EOF
 }
