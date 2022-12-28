@@ -4,12 +4,12 @@
 
 The code consists of Terraform examples using HashiCorp Configuration Language (HCL) on Proxmox.
 
-For this example I used the Telmate provider from this repohttps://github.com/Telmate/terraform-provider-proxmox.
+For this example I used the [Telmate Proxmox Terraform Provider](https://github.com/Telmate/terraform-provider-proxmox).
 
 ## Requirements
 
 * Terraform
-* Terraform Provider & Provisioner for Proxmox from https://github.com/Telmate/terraform-provider-proxmox
+* Proxmox server running
 
 ### Run 
 
